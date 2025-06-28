@@ -1,7 +1,12 @@
 import express, { Request, Response } from "express";
 import { Todo } from "../types/todo";
 
-const todos: Todo[] = [];
+const todos: Todo[] = [
+  { id: 1, title: "buy food", date: "2025-07-28", completed: false },
+  { id: 2, title: "buy milk", date: "2025-07-30", completed: false },
+  { id: 3, title: "buy cake", date: "2025-07-27", completed: true },
+  { id: 4, title: "buy dosa", date: "2025-06-30", completed: false },
+];
 
 export const display_todos = (req: Request, res: Response) => {
   try {

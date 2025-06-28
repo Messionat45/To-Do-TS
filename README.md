@@ -13,3 +13,5 @@ in backend folder: npm run dev
 
 for continuos running of backend for every change like node mon in normal js
 in typescripte we do tsc --watch
+
+for continuos frontend npx tsc --watch

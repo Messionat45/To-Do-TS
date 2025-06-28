@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- axios doesnt work in direct js file due to es6 chnage in tscofig this needs to be adde dhere > -->
     <script src="../dest/index.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header><h1>To-Do</h1></header>
@@ -21,8 +22,11 @@
       <input type="date" name="date" id="date" />
       <button type="submit" id="add">Add</button>
     </section>
+
     <section id="todos">
       <h4>Your Todos</h4>
+
+      <ul id="todo-list"></ul>
     </section>
   </body>
 </html>
