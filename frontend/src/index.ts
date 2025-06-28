@@ -1,3 +1,4 @@
+// import axios from "axios";
 declare const axios: any;
 //because of that axos defined in html and to keep TS ghappy initialised thsi variable here
 
@@ -16,7 +17,7 @@ addBtn.addEventListener("click", async () => {
     console.log(title, date);
 
     if (!title || !date) {
-      alert("Please enetr both title and date");
+      alert("Please enetr both title and dates");
       return;
     }
 

@@ -5,15 +5,15 @@ import todoRoutes from "./routes/todoRoutes";
 const app = express();
 const port = 3000;
 
-// app.use(cors());
+app.use(cors());
 // Enable CORS with preflight support
-app.use(
-  cors({
-    origin: "*", // allow your frontend origin
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: "*", // allow your frontend origin
+//     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+//     allowedHeaders: ["Content-Type"],
+//   })
+// );
 
 app.use(express.json());
 
