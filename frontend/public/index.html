@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS TODO</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- axios doesnt work in direct js file due to es6 chnage in tscofig this needs to be adde dhere > -->
+    <script src="../dest/index.js" type="module"></script>
+  </head>
+  <body>
+    <header><h1>To-Do</h1></header>
+
+    <section>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="add your todo..."
+      />
+      <input type="date" name="date" id="date" />
+      <button type="submit" id="add">Add</button>
+    </section>
+    <section id="todos">
+      <h4>Your Todos</h4>
+    </section>
+  </body>
+</html>
